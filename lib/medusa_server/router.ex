@@ -9,7 +9,8 @@ defmodule MedusaServer.Router do
 
   post "/process" do
     urls = conn.body_params["urls"]
-    send_resp(conn, 201, "Processed")
+    base64Image = Medusa.merge_images(["https://s3.amazonaws.com/icalialabs/assets/img/bg.png", "https://s3.amazonaws.com/icalialabs/assets/img/area-int.png"])
+    send_resp(conn, 201, "#{base64Image}")
   end
 
   match _, do: send_resp(conn, 404, "Oops!")

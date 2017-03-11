@@ -15,7 +15,7 @@ defmodule MedusaServer.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [extra_applications: [:logger, :cowboy, :plug],
+    [extra_applications: [:logger, :cowboy, :plug, :image64],
      mod: {MedusaServer, []}]
   end
 
@@ -30,6 +30,8 @@ defmodule MedusaServer.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:cowboy, "~> 1.1"},
-     {:plug, "~> 1.0"}]
+     {:plug, "~> 1.0"},
+     {:image64, "~> 0.0.1"},
+     {:anubis, "~> 0.3.0"}]
   end
 end
