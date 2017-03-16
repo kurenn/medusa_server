@@ -30,6 +30,7 @@ Before using medusa_server make sure you have the images url's and make sure the
 
 ```console
 docker run --rm \
+	-p 2604:2604 \
 	icalialabs/medusa_server:latest
 	
 16:35:14.255 [info]  Started application
