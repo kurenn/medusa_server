@@ -32,6 +32,7 @@ defmodule MedusaServer.Mixfile do
     [{:cowboy, "~> 1.1"},
      {:plug, "~> 1.0"},
      {:image64, "~> 0.0.1"},
-     {:anubis, "~> 0.3.0"}]
+     {:anubis, "~> 0.3.0"},
+     { :uuid, "~> 1.1" }]
   end
 end
