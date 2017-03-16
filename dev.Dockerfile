@@ -13,7 +13,3 @@ ADD . /code/
 
 RUN yes | mix deps.get \
     && mix compile
-
-EXPOSE 2604
-
-CMD ["mix", "run", "--no-halt"]

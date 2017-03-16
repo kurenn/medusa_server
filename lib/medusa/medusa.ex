@@ -3,7 +3,7 @@ defmodule Medusa do
 
   def merge_images(urls) do
     convert(urls)
-    File.read!("/tmp/base64Output") |> IO.puts
+    File.read!("/tmp/base64Output")
   end
 
   defp transform_to_base64 do

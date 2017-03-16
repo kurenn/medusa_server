@@ -4,7 +4,7 @@ defmodule MedusaServer do
 
   def start(_type, _args) do
     children = [
-      Plug.Adapters.Cowboy.child_spec(:http, MedusaServer.Router, [], port: 4000)
+      Plug.Adapters.Cowboy.child_spec(:http, MedusaServer.Router, [], port: 2604)
     ]
 
     Logger.info "Started application"

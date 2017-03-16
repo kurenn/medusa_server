@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+  web:
+    image: icalialabs/medusa_server:development
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    command: 'mix run --no-halt'
+    volumes:
+      - .:/code
+    working_dir: /code
+    tty: true
+    stdin_open: true
+    ports:
+      - 2604:2604
