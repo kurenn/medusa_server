@@ -1,3 +1,5 @@
+![Medusa](medusa.jpg)
+
 ## Overview
 
 `medusa_server` is a simple web server written in elixir that uses [medusa](https://github.com/IcaliaLabs/medusa) command line interface to stack multiple images from URL's.
