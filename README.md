@@ -6,7 +6,7 @@
 
 ## Table of contents
 
-- [Prerquisites](#prerequisites)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
