@@ -11,8 +11,7 @@ defmodule MedusaServer.Router do
   post "/process" do
     Logger.info "POST request"
 
-    urls = conn.body_params["urls"]
-    base64Image = Medusa.merge_images(["https://s3.amazonaws.com/icalialabs/assets/img/bg.png", "https://s3.amazonaws.com/icalialabs/assets/img/area-int.png"])
+    base64Image = Medusa.merge_images(conn.body_params["urls"])
     send_resp(conn, 201, base64Image)
   end
 
